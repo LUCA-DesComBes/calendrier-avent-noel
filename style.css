@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Chango", sans-serif;
+}
+body {
+    background-color: #fff;
+}
+img {
+    display: none;
+}
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    transition-property: transform, color, background-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+}
+button:hover, button:focus {
+    background-color: #214441;
+    transform: scale(1.2) rotateY(-0.5turn);
+    transition: transform 0.5s ease-in;
+    color: #fff;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #4D682A;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    z-index: 1;
+}
+p {
+    font-weight: 400;
+    font-size: 72px;
+}
+.beige {
+    background-color: #FFC776;
+    color: #402909;
+}
+.pink {
+    background-color: #E5D3E4;
+    color: #4D254A;
+}
+.aqua {
+    background-color: #BAECE7;
+    color: #214441;
+}
+.red {
+    background-color: #F26046;
+    color: #FFFFFF;
+}
+.beige:hover, .beige:focus {
+    background-color: #402909;
+    color: #FFC776;
+}
+.pink:hover, .pink:focus {
+    background-color:  #4D254A;
+    color: #E5D3E4;
+}
+.aqua:hover, .aqua:focus {
+    background-color: #214441;
+    color: #BAECE7;
+}
+.red:hover, .red:focus {
+    background-color: #FFFFFF;
+    color: #F26046;
+}
+#gif-container {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(135%, 85%);
+}
+.gif {
+    height: 400px;
+    width: 400px;
+}
+@media screen and (min-width: 441px) {
+    #container {
+        margin: 2.625rem 6.125rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+        display: block;
+    }
+    button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1025px) {
+    #container {
+        margin: 3.313rem 10.438rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
